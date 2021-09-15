@@ -59,6 +59,6 @@
 		$_SESSION['error'][] = 'Select candidates to vote first';
 	}
 
-	header('location: canvassing.php');
+	header('location: home.php');
 
 ?>
