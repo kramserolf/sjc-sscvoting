@@ -1,5 +1,14 @@
 <?php
-	$conn = new mysqli('us-cdbr-east-04.cleardb.com', 'b501b1e5bb2001', 'ab3c9ed0', 'heroku_2f068a3bde88a68');
+
+$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$cleardb_server = $cleardb_url["host"];
+$cleardb_username = $cleardb_url["user"];
+$cleardb_password = $cleardb_url["pass"];
+$cleardb_db = substr($cleardb_url["path"],1);
+$active_group = 'default';
+$query_builder = TRUE;
+
+	$conn = new mysqli($cleardb_username, $cleardb_username, $cleardb_password , $cleardb_db);
 	if ($conn->connect_error) {
 	    die("Connection failed: " . $conn->connect_error);
 	}
