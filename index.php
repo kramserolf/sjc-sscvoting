@@ -13,7 +13,7 @@
 <body class="hold-transition login-page">
 	<div class="login-box">
 		<div class="login-logo">
-			<img src="images/sjc.png" alt="sjc logo" style="width:auto; height:100px;"><br>
+			<img src="images/sjc.png" alt="sjc logo" style="width:auto; height:80px;"><br>
 			<b>SSC Voting System</b>
 		</div>
 
@@ -22,11 +22,11 @@
 
 			<form action="login.php" method="POST">
 				<div class="form-group has-feedback">
-					<input type="text" class="form-control" name="voter" placeholder="Voter's ID" required>
+					<input type="text" class="form-control" name="voter" placeholder="Student's ID" required>
 					<span class="glyphicon glyphicon-user form-control-feedback"></span>
 				</div>
 				<div class="form-group has-feedback">
-					<input type="password" class="form-control" name="password" placeholder="Password" required>
+					<input type="password" class="form-control" name="password" placeholder="Department" required>
 					<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 				</div>
 				<div class="row">
