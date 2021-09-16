@@ -1,7 +1,7 @@
 <?php include '../includes/conn.php'; ?>
 <?php include '../admin/includes/slugify.php'; ?>
-<?php include '../admin/includes/header.php'; ?>
-<meta http-equiv="refresh" content="15">
+<?php include '../admin/includes/header_copy.php'; ?>
+<meta http-equiv="refresh" content="60">
 <body>
 <div class="wrapper">
 
@@ -120,7 +120,7 @@
       ?>
   
       </section>
-      <p class="blockquote-footer text-right">Automatically refreshed every 15 seconds.</p>
+      <p class="blockquote-footer text-right">Automatically refreshed every 5 minutes.</p>
       <!-- right col -->
     </div>
   	<?php include '../admin/includes/footer.php'; ?>
@@ -128,7 +128,7 @@
 </div>
 <!-- ./wrapper -->
 
-<?php include '../admin/includes/scripts.php'; ?>
+<?php include '../admin/includes/scripts_copy.php'; ?>
 <?php
   $sql = "SELECT * FROM positions ORDER BY priority ASC";
   $query = $conn->query($sql);
