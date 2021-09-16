@@ -1,6 +1,6 @@
-<?php include './includes/conn.php'; ?>
-<?php include './admin/includes/slugify.php'; ?>
-<?php include './admin/includes/header.php'; ?>
+<?php include '../includes/conn.php'; ?>
+<?php include '../admin/includes/slugify.php'; ?>
+<?php include '../admin/includes/header.php'; ?>
 <meta http-equiv="refresh" content="15">
 <body>
 <div class="wrapper">
@@ -123,12 +123,12 @@
       <p class="blockquote-footer text-right">Automatically refreshed every 15 seconds.</p>
       <!-- right col -->
     </div>
-  	<?php include './admin/includes/footer.php'; ?>
+  	<?php include '../admin/includes/footer.php'; ?>
 
 </div>
 <!-- ./wrapper -->
 
-<?php include './admin/includes/scripts.php'; ?>
+<?php include '../admin/includes/scripts.php'; ?>
 <?php
   $sql = "SELECT * FROM positions ORDER BY priority ASC";
   $query = $conn->query($sql);

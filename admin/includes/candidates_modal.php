@@ -120,20 +120,6 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="edit_course" class="col-sm-3 control-label">Course</label>
-
-            <div class="col-sm-9">
-              <input type="text" class="form-control" id="edit_course" name="course" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="year" class="col-sm-3 control-label">Year</label>
-
-            <div class="col-sm-9">
-              <input type="text" class="form-control" id="edit_year" name="year" required>
-            </div>
-          </div>
-          <div class="form-group">
             <label for="edit_lastname" class="col-sm-3 control-label">Lastname</label>
 
             <div class="col-sm-9">
