@@ -56,18 +56,20 @@
                     <th class="hidden"></th>
                     <th>Student ID</th>
                     <th>Course</th>
-                    <th>Time Voted</th>
+                    <th>Year</th>
+                    <th>Voted</th>
                   </thead>
                   <tbody>
                     <?php
-                    $sql = "SELECT votes.voters_id AS votersid, votes.timevoted AS timevoted, votes.course AS course FROM voters LEFT JOIN votes ON votes.voters_id=voters.voters_id";
+                    $sql = "SELECT voters_id, course, year, voted FROM voters";
                     while($row = $query->fetch_assoc()){
                       echo "
                         <tr>
                           <td class='hidden'></td>
-                          <td>".$row['votersid']."</td>
+                          <td>".$row['voters_id']."</td>
                           <td>".$row['course']."</td>
-                          <td>".$row['timevoted']."</td>
+                          <td>".$row['year']."</td>
+                          <td>".$row['voted']."</td>
                         </tr>
                       ";
                     }

@@ -56,7 +56,7 @@
                   echo "
                     <div class='row votelist'>
                       <span class='col-sm-6'><span class='pull-left'><b>".$row['description']." :</b></span></span> 
-                      <span class='col-sm-6'><img src='../images/".$row['photo']."' style='height:45px; width:45px; margin-right:15px; border-radius:12px;'>".$row['canfirst']." ".$row['canlast']."</span>
+                      <span class='col-sm-6'><img src='../images/".$row['photo']."' style='height:45px; width:45px; margin-right:15px; '>".$row['canfirst']." ".$row['canlast']."</span>
                     </div>
                   ";
                 }

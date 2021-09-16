@@ -10,7 +10,13 @@
 <script src="../bower_components/moment/moment.js"></script>
 <!-- DataTables -->
 <script src="../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript" src="../bower_components/datatables.net/js/dataTables.bootstrap4.min.js"></script>
+<script type="text/javascript" src="../bower_components/datatables.net/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="../bower_components/datatables.net/js/jszip.min.js"></script>
+<script type="text/javascript" src="../bower_components/datatables.net/js/buttons.bootstrap4.min.js"></script>
+<script type="text/javascript" src="../bower_components/datatables.net/js/buttons.html5.min.js"></script>
+<script type="text/javascript" src="../bower_components/datatables.net/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="../bower_components/datatables.net/js/responsive.bootstrap4.js"></script>
 <!-- ChartJS -->
 <script src="../bower_components/chart.js/Chart.js"></script>
 <!-- ChartJS Horizontal Bar -->
@@ -48,17 +54,14 @@ $(function(){
 </script>
 <!-- Data Table Initialize -->
 <script>
-  $(function () {
-    $('#example1').DataTable()
-    $('#example2').DataTable({
-      'paging'      : true,
-      'lengthChange': false,
-      'searching'   : false,
-      'ordering'    : true,
-      'info'        : true,
-      'autoWidth'   : false
-    })
-  })
+  $(document).ready(function() {
+    $('#example1').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'excel'
+        ]
+    } );
+} );
 </script>
 <!-- Date and Timepicker -->
 <script>

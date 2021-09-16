@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Voting System using PHP</title>
+  <title>Web-Based SSC Voting System</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -55,7 +55,7 @@
     }
 
     .clist {
-      margin-left: 20px;
+      margin-left: 40px;
     }
 
     .cname {
@@ -65,5 +65,22 @@
     .votelist {
       font-size: 17px;
     }
+    
+    @media screen and (max-width: 600px) {
+      .clist {
+      margin-left: 60px;
+      }
+      .cname {
+      font-size: 20px;
+      text-align: center
+      }
+
+      img {
+        height: 80px;
+        width: 80px;
+      }
+
+    }
+
   </style>
 </head>

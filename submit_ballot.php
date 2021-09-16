@@ -29,7 +29,8 @@
 							foreach($_POST[$position] as $key => $values){
 								$sql_array[] = "INSERT INTO votes (voters_id, candidate_id, position_id, timevoted) VALUES ('".$voter['id']."', '$values', '$pos_id', '$date')";
 							}
-							
+							$update = $conn->query("UPDATE voters SET voted = 'yes' WHERE id = '".$voter['id']."'");
+							// $update = $conn->query("INSERT INTO summary(voters_id, voted) VALUES('".$voter['id']."', 'Yes')");
 						}
 						
 					}
@@ -41,7 +42,8 @@
 				}
 				
 			}
-			$update = $conn->query("UPDATE voters SET voted = 'yes' WHERE voters_id = '".$voter['id']."'");
+			$update = $conn->query("UPDATE voters SET voted = 'Success' WHERE id = '".$voter['id']."'");
+			// $update = $conn->query("INSERT INTO summary(voters_id, voted) VALUES('".$voter['id']."', 'Yes')");
 			if(!$error){
 				foreach($sql_array as $sql_row){
 					$conn->query($sql_row);

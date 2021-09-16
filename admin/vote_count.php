@@ -54,26 +54,24 @@
                 <table id="example1" class="table table-bordered">
                   <thead>
                     <th class="hidden"></th>
-                    <th>Voter</th>
-                    <th>Course</th>
-                    <th>Timestamp</th>
                     <th>Position</th>
                     <th>Candidate Name</th>
+                    <th>Course</th>
+                    <th>Total Votes</th>
                   </thead>
                   <tbody>
 
                     <?php
-                    $sql = "SELECT *, candidates.firstname AS canfirst, candidates.lastname AS canlast, voters.voters_id AS votid, positions.description as position FROM votes LEFT JOIN positions ON positions.id=votes.position_id LEFT JOIN candidates ON candidates.id=votes.candidate_id LEFT JOIN voters ON voters.id=votes.voters_id ORDER BY positions.priority ASC";
+                    $sql = "SELECT *, candidates.course as course, candidates.firstname AS canfirst,candidates.lastname AS canlast, COUNT(candidates.lastname) AS votes, voters.voters_id AS votid, positions.description as position FROM votes LEFT JOIN positions ON positions.id=votes.position_id LEFT JOIN candidates ON candidates.id=votes.candidate_id LEFT JOIN voters ON voters.id=votes.voters_id GROUP BY candidates.lastname ORDER BY positions.priority ASC";
                     $query = $conn->query($sql);
                     while($row = $query->fetch_assoc()){
                       echo "
                         <tr>
                           <td class='hidden'></td>
-                          <td>".$row['votid']."</td>
-                          <td>".$row['course']."</td>
-                          <td>".$row['timevoted']."</td>
                           <td>".$row['position']."</td>
                           <td>".$row['canfirst']." ".$row['canlast']."</td>
+                          <td>".$row['course']."</td>
+                          <td>".$row['votes']."</td>
                         </tr>
                       ";
                     }
