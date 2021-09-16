@@ -68,24 +68,31 @@
         <form class="form-horizontal" method="POST" action="voters_edit.php">
           <input type="hidden" class="id" name="id">
           <div class="form-group">
-            <label for="edit_firstname" class="col-sm-3 control-label">Firstname</label>
+            <label for="edit_fullname" class="col-sm-3 control-label">Name</label>
 
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="edit_firstname" name="firstname">
+              <input type="text" class="form-control" id="edit_fullname" name="fullname">
             </div>
           </div>
           <div class="form-group">
-            <label for="edit_lastname" class="col-sm-3 control-label">Lastname</label>
+            <label for="edit_course" class="col-sm-3 control-label">Course</label>
 
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="edit_lastname" name="lastname">
+              <input type="text" class="form-control" id="edit_course" name="course">
             </div>
           </div>
           <div class="form-group">
-            <label for="edit_password" class="col-sm-3 control-label">Password</label>
+            <label for="edit_year" class="col-sm-3 control-label">Year</label>
 
             <div class="col-sm-9">
-              <input type="password" class="form-control" id="edit_password" name="password">
+              <input type="text" class="form-control" id="edit_year" name="year">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="edit_voted" class="col-sm-3 control-label">Voted</label>
+
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="edit_voted" name="voted">
             </div>
           </div>
       </div>

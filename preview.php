@@ -25,7 +25,7 @@
 						$output['list'] .= "
 							<div class='row votelist'>
 		                      	<span class='col-sm-6'><span class='pull-left'><>".$row['description']."</span>
-		                      	<span class='col-sm-6'>".$cmrow['firstname']." ".$cmrow['lastname']."</span>
+		                      	<span class='col-sm-6'><img src='images/".$csrow['photo']."' style='height:35px; width:35px; margin-right:15px; border-radius:20px;'>".$cmrow['firstname']." ".$cmrow['lastname']."</span>
 		                    </div>
 						";
 					}
