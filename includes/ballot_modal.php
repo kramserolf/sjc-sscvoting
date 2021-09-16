@@ -55,8 +55,8 @@
                 while($row = $query->fetch_assoc()){
                   echo "
                     <div class='row votelist'>
-                      <span class='col-sm-6'><span class='pull-left'><b>".$row['description']." :</b></span></span> 
-                      <span class='col-sm-6'>".$row['canfirst']." ".$row['canlast']."</span>
+                      <span class='col-sm-6 pos-text'><span class='pull-left'><b>".$row['description']." :</b></span></span> 
+                      <span class='col-sm-6 name-text'>".$row['canfirst']." ".$row['canlast']."</span>
                     </div>
                   ";
                 }

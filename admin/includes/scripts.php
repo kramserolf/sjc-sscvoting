@@ -16,7 +16,6 @@
 <script type="text/javascript" src="../bower_components/datatables.net/js/buttons.bootstrap4.min.js"></script>
 <script type="text/javascript" src="../bower_components/datatables.net/js/buttons.html5.min.js"></script>
 <script type="text/javascript" src="../bower_components/datatables.net/js/dataTables.responsive.min.js"></script>
-<script type="text/javascript" src="../bower_components/datatables.net/js/responsive.bootstrap4.js"></script>
 <!-- ChartJS -->
 <script src="../bower_components/chart.js/Chart.js"></script>
 <!-- ChartJS Horizontal Bar -->

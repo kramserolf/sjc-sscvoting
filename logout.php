@@ -2,5 +2,5 @@
 	session_start();
 	session_destroy();
 
-	header('location: canvassing.php');
+	header('location: canvassing/index.php');
 ?>

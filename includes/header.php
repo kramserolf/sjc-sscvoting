@@ -68,17 +68,21 @@
     
     @media screen and (max-width: 600px) {
       .clist {
-      margin-left: 60px;
+      margin-left: 20px;
       }
       .cname {
       font-size: 20px;
-      text-align: center
+      text-align: center,
+      margin-right: 20px;
       }
 
       img {
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
         margin-top:5px;
+      }
+      span{
+        font-size: 15px;
       }
     }
 
