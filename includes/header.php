@@ -76,10 +76,10 @@
       }
 
       img {
-        height: 80px;
-        width: 80px;
+        height: 60px;
+        width: 60px;
+        margin-top:5px;
       }
-
     }
 
   </style>
