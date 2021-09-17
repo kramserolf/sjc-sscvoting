@@ -22,11 +22,11 @@
 
 			<form action="login.php" method="POST">
 				<div class="form-group has-feedback">
-					<input type="text" class="form-control" name="voter" placeholder="Student's ID" required>
+					<input type="text" class="form-control" name="voters" placeholder="Student's ID" required>
 					<span class="glyphicon glyphicon-user form-control-feedback"></span>
 				</div>
 				<div class="form-group has-feedback">
-					<input type="password" class="form-control" name="password" placeholder="Department" required>
+					<input type="password" class="form-control" name="passwords" placeholder="Department" required>
 					<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 				</div>
 				<div class="row">
