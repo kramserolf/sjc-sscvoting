@@ -24,5 +24,5 @@
 		$_SESSION['error'] = 'Fill up add form first';
 	}
 
-	header('location: voters.php');
+	header('location: home.php');
 ?>
