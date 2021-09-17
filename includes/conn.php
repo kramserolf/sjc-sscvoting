@@ -1,6 +1,6 @@
 <?php
 
-$conn = new mysqli('us-cdbr-east-04.cleardb.com', 'bfe52e478df8c5', '06ecd7f4' , 'heroku_8a52fffa867f0cd');
+$conn = new mysqli('us-cdbr-east-04.cleardb.com', 'be82286f1e90e3', '1849bdc1' , 'heroku_64dfc19570a5c36');
 if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 }
