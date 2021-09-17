@@ -1,7 +1,6 @@
 <?php include '../includes/conn.php'; ?>
 <?php include '../admin/includes/slugify.php'; ?>
 <?php include '../admin/includes/header_copy.php'; ?>
-<meta http-equiv="refresh" content="60">
 <body>
 <div class="wrapper">
 
